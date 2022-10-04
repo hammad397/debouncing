@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import TrailingDebouncing from "./components/TrailingDebouncing";
+import LeadingDebouncing from "./components/LeadingDebouncing";
 
-function App() {
+const App = () => {
+  let show = true;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+
+    <h1 className='title'>Trailing Debouncing</h1>
+    <div className="debouncing">
+      <TrailingDebouncing show={show} view='Nothing to preview' subHeading='Preview'/>
+      <TrailingDebouncing view='Nothing to cart' subHeading='Cart'/>
     </div>
-  );
+    <hr />
+    <h1 className='title'>Leading Debouncing</h1>
+    <div className="debouncing">
+      <LeadingDebouncing show={show} view='Nothing to preview' subHeading='Preview'/>
+      <LeadingDebouncing view='Nothing to cart' subHeading='Cart'/>
+    </div>
+    </>
+  )
 }
 
-export default App;
+export default App
