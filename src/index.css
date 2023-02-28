@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+    font-size: 62.5%;
 }
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.layout{
+    width: 32rem;
+}
+
+.title{
+    margin-top: 4rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+input{
+    padding: 1rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    background-color: rgb(241, 241, 241);
+}
+
+button{
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    display: block;
+    margin:  0 auto;
+    margin-bottom: 2rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.sub-heading{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    font-size: 1.8rem;
+    word-break: break-all;
+    display: flex;
+    justify-content: center;
+}
+
+.debouncing{
+    max-width: 120rem;
+    width: 60%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
